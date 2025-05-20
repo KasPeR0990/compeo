@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# com-peo
 
-## Getting Started
+## company and people researcher
 
-First, run the development server:
+### powered by exa ai api and claude
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+com-peo is an open-source tool that provides instant, in-depth insights into companies and individuals. with com-peo, you can:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **company research**: input a company's url to gather comprehensive information from across the web, including details about the organization, its products, funding, social presence, and more.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **people search (work in progress)**: search for individuals based on specified criteria and receive enriched, nicely formatted datasets.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## tech stack
+- **search engine**: [exa.ai](https://exa.ai) - web search api optimized for ai applications
+- **frontend**: next.js (app router), tailwindcss, typescript
+- **ai integration**: vercel ai sdk
 
-## Learn More
+## 🔑 api keys & environment setup
 
-To learn more about Next.js, take a look at the following resources:
+### required api keys
+- **exa api key**: obtain from the [exa dashboard](https://dashboard.exa.ai/api-keys)
+- **anthropic api key**: obtain from the [anthropic console](https://console.anthropic.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## credits
+the company researcher feature is copied from [exa ai's company researcher](https://github.com/exa-labs/company-researcher).
