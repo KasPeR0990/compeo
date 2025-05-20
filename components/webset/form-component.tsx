@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import { ArrowRight } from 'lucide-react'
 
 type Props = {
-  onPreview: (data: any) => void
+  onParse: (data: any) => void
 }
 
-const FormComponent: React.FC<Props> = ({ onPreview }) => {
+const FormComponent: React.FC<Props> = ({ onParse }) => {
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
 
@@ -22,7 +22,7 @@ const FormComponent: React.FC<Props> = ({ onPreview }) => {
       })
 
       const data = await res.json()
-      onPreview(data)
+      onParse(data)
     } catch (err) {
       console.error('Failed to fetch preview', err)
     } finally {
@@ -31,7 +31,7 @@ const FormComponent: React.FC<Props> = ({ onPreview }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-4xl mx-auto relative">
+    <form onSubmit={handleSubmit} className="w-full max-w-7xl mx-auto relative">
       <input
         type="text"
         placeholder="describe what you're looking for..."
