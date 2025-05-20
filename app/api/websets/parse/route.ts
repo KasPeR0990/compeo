@@ -42,6 +42,8 @@ Output:
   ]
 }
 
+* no need to say "the person is" just list the criteria like we did in the example * 
+
 `,
     })
 

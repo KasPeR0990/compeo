@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import CompanyResearcher from "../components/CompanyResearchHome";
-import PeopleWebsets from "../components/Websets"; // <-- make this component
+import PeopleWebsets from "../components/SearchHome"; // <-- make this component
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("company");
