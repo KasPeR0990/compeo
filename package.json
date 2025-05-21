@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^1.0.0",
+    "@ai-sdk/ui-utils": "^1.2.11",
     "@vercel/analytics": "^1.4.1",
     "ai": "^4.0.25",
     "clsx": "^2.1.1",
@@ -22,6 +23,7 @@
     "react-dom": "^18",
     "react-icons": "^4.12.0",
     "react-tweet": "^3.2.1",
+    "sonner": "^2.0.3",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4"

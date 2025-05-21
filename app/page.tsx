@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import CompanyResearcher from "../components/CompanyResearchHome";
-import PeopleWebsets from "../components/SearchHome"; // <-- make this component
+import WebsetPage from "../components/Websets"; // <-- make this component
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("company");
@@ -36,7 +36,7 @@ export default function Home() {
         <CompanyResearcher />
       </div>
       <div className={activeTab === "people" ? "" : "hidden"}>
-        <PeopleWebsets />
+        <WebsetPage />
       </div>
     </main>
   );
